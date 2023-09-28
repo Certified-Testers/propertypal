@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="2">
+  <test thread-count="5" name="Test ran on Chrome">
+  <parameter name="Browser" value="Chrome"></parameter>
+    <classes>
+      <class name="tests.Landingpage_Test"/>
+      <class name="tests.Result_Test"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test ran on Firefox">
+  <parameter name="Browser" value="Firefox"></parameter>
+    <classes>
+      <class name="tests.Landingpage_Test"/>
+      <class name="tests.Result_Test"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test ran on Safari">
+  <parameter name="Browser" value="Safari"></parameter>
+    <classes>
+      <class name="tests.Landingpage_Test"/>
+      <class name="tests.Result_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

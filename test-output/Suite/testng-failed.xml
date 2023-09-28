@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="Test ran on Chrome(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="tests.Landingpage_Test">
+        <methods>
+          <include name="teardown"/>
+          <include name="reset"/>
+          <include name="setup"/>
+          <include name="PP_001"/>
+          <include name="PP_002"/>
+        </methods>
+      </class> <!-- tests.Landingpage_Test -->
+      <class name="tests.Result_Test">
+        <methods>
+          <include name="PP_003"/>
+          <include name="PP_004"/>
+          <include name="reset"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.Result_Test -->
+    </classes>
+  </test> <!-- Test ran on Chrome(failed) -->
+  <test thread-count="2" parallel="classes" name="Test ran on Safari(failed)">
+    <parameter name="Browser" value="Safari"/>
+    <classes>
+      <class name="tests.Result_Test">
+        <methods>
+          <include name="PP_003"/>
+          <include name="PP_004"/>
+          <include name="reset"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- tests.Result_Test -->
+    </classes>
+  </test> <!-- Test ran on Safari(failed) -->
+</suite> <!-- Failed suite [Suite] -->
